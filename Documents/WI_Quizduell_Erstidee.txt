@@ -1,0 +1,27 @@
+WI Quizduell App als Erweiterung von "Studentencoach" -> eigene Fragen? + Struktur!
+BSDS Einbindung (BäM sucht das Superhirn)
+Dozenten stellen Fragen ein
+Anbindung an Pingo?
+Kategorien nach Fächer
+Fragenbasis wird von uns erstellt.
+
+Problem: -> langweiliges Lernen
+Lösung: Quizduellidee mit WI-Wissen
+Funktionalitäten: 
+- eigene Fragen erstellen
+- Fragen upload für Professoren
+
+
+Peter Mayer
+Marcel Härle
+
+
+
+Tutorials:
+VideotoBrain
+- Android
+
+
+
+Hybride-App
+Phone Gap
