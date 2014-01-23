@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Prototyp: Erste Quizfrage</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<link href="css/jquery.mobile-1.4.0.min.css" type="text/css" rel="stylesheet">
+	<link href="css/styles.css" type="text/css" rel="stylesheet">
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+	<script src="js/scripts.js"></script>
+</head> 
+
+<body> 
+	<div data-role="page">
+		<div data-role="header">
+			Erste Quizfrage
+		</div>
+		<div data-role="content">
+			<div id="content">
+				<div id="question">
+					Wo steht der Eiffelturm?
+				</div>
+				
+				<div class="optionTable">
+					<div class="rowOptionTable">
+						<button class="option customButtonSize" data-inline="true" data-val="Bern">
+							Bern
+						</button>
+						<button class="option customButtonSize" data-inline="true" data-val="Prag">
+							Prag
+						</button>
+					</div>
+					<div class="rowOptionTable">
+						<button class="option customButtonSize" data-inline="true" data-val="Paris">
+							Paris
+						</button>
+						<button class="option customButtonSize" data-inline="true" data-val="Nirgendwo">
+							Nirgendwo
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
