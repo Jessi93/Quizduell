@@ -1,0 +1,60 @@
+/*.ui-page.ui-body-c div{
+	background-image: url("img/background.png") !important;
+	background-repeat: repeat !important;
+	background-size: cover !important;
+}
+*/
+.ui-page, .ui-dialog {
+    background: transparent repeat scroll;
+}
+body {
+    background: url("../img/background.png") repeat center 0 !important;
+}
+
+div {
+	text-align: center;
+}
+
+#question {
+	background-color: #345;
+	color: white;
+	border-radius: 1.3em;
+	padding: 2em;
+	opacity: 0.85;
+	
+	font-size: 2em;
+	
+	margin-bottom: 2em;
+}
+
+.option {
+	font-size: 1.5em;
+	border-radius: 1.5em !important;
+	opacity: 0.9;
+}
+
+.optionTable {
+	display: table;
+	width: 100%;
+}
+
+.rowOptionTable {
+	display: table-row;
+}
+
+.rowOptionTable>div {
+	display: table-cell;
+}
+
+.customButtonSize {
+	width: 45% !important;
+	height: 6em !important;
+}
+
+.answerRight {
+	background-color: #3D0 !important;
+}
+
+.answerWrong {
+	background-color: #D22 !important;
+}
