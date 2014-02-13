@@ -19,3 +19,8 @@
   function cameraFail(message) {
     alert("Camera error: " + message);
   }
+  
+  function openRundenübersicht() {
+  var RundenübersichtView = new steroids.views.WebView("Rundenuebersicht.html");
+  steroids.layers.push(RundenübersichtView);
+  }
