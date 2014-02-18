@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Studiduell</title>
+  
+  <link rel="stylesheet" href="/vendor/topcoat/css/topcoat-mobile-light.css" />
+  <link rel="stylesheet" href="/css/frage.css" />
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <!-- cordova.js is served from localhost to ensure the correct version -->
+  <script src="http://localhost/cordova.js"></script>
+  <script src="/components/steroids-js/steroids.js"></script>
+  
+  <script src="/js/frage.js"></script>
+  
+</head>
+<body>
+	<div id="kategorieDiv"></div>
+	<div id="frageDiv"></div>
+	
+	<div id="antwortTabelle">
+		<div class="row">
+			<button id=antwort1 class="topcoat-button--large antwortButton" ontouchend="markiereAntwort(this);">A</button>
+			<button id=antwort2 class="topcoat-button--large antwortButton" ontouchend="markiereAntwort(this);">B</button>
+		</div>
+		<div class="row">
+			<button id=antwort3 class="topcoat-button--large antwortButton" ontouchend="markiereAntwort(this);">C</button>
+			<button id=antwort4 class="topcoat-button--large antwortButton" ontouchend="markiereAntwort(this);">D</button>
+		</div>
+	</div>
+</body>
+</html>
