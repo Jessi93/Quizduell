@@ -1,0 +1,14 @@
+
+.greenBackground {
+	background-color: green !important;
+}
+.redBackground {
+	background-color: red !important;
+}
+
+.Quadrat {
+border: 1px black solid;
+width: 20px;
+height: 20px;
+
+}
