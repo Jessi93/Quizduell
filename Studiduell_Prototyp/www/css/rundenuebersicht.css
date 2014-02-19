@@ -8,7 +8,11 @@
 
 .Quadrat {
 border: 1px black solid;
-width: 20px;
-height: 20px;
+width: 33px;
+height: 33px;
+border-radius: 5px;
+}
 
+.SchriftgroesseKlein{
+font-size:13px;
 }
