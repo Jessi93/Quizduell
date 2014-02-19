@@ -1,3 +1,8 @@
 body {
 	background-color: #1C1C1C;
 }
+
+.custom_List_item{
+margin-left: 2em;
+list-style-image: url('default_profile_picture.jpg');
+}

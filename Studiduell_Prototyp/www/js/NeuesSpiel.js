@@ -10,4 +10,8 @@ function getFriendslist() {
 	*/
 }
 
+function test() {
+steroids.view.navigationBar.show("Titel geändert!");
+}
+
 document.addEventListener("deviceready", init, false);
