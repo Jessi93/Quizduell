@@ -3,6 +3,21 @@ body {
 }
 
 .custom_List_item{
-margin-left: 2em;
-list-style-image: url('default_profile_picture.jpg');
+/*
+margin-left: 60px; 
+vertical-align: middle;
+list-style-image: url('../images/profilbild_Klein.jpg'); 
+list-style-type: none;
+*/
+}
+.custom_icon_button{
+margin-bottom: 1em;
+width: 100%; 
+}
+
+#Spieler_suchen_img{
+width: 80% ;
+height: 80%;
+padding-top: 0.5em;
+
 }
