@@ -15,8 +15,9 @@ body {
 	width: 100%; 
 }
 
-#Spieler_suchen_img {
-	width: 80% ;
-	height: 80%;
-	padding-top: 0.5em;
+#spielerSuchenButton {
+	background-image: url("../images/magnifier.ico");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 3em;
 }
