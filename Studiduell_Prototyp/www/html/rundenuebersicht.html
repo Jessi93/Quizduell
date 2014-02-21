@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Steroids App</title>
+
+
+  <link rel="stylesheet" href="/vendor/topcoat/css/topcoat-mobile-light.css" />
+  <link rel="stylesheet" href="/css/application.css" />
+  <link rel="stylesheet" href="/css/rundenuebersicht.css" />
+
+  <script src="/js/onerror.js"></script>
+  <script src="/js/console.log.js"></script>
+
+  <!-- cordova.js is served from localhost to ensure the correct version -->
+  <script src="http://localhost/cordova.js"></script>
+  <script src="/components/steroids-js/steroids.js"></script>
+
+  <script src="/js/rundenuebersicht.js"></script>
+</head>
+<body>
+
+<table id="ProfilbilderTabelle border="0" width="100%" >
+<td> <p><img align="left" src="../images/profilbild.png" width="35%" height="35%" alt="Profilbild"></p> <p><img  style="margin-left:20px;" align="left" src="../images/Kreuz.png" width="30%" height="30%" alt="Kreuz"></p></td>
+
+<td> <p><img  align="right" src="../images/profilbild.png" width="35%" height="35%" alt="Profilbild"></p> <p><img  style="margin-right:20px;" align="right" src="../images/addicon.png" width="35%" height="35%" alt="Addicon"></p></td>
+
+<tr>
+
+<table id="SpielernamenUndErgebnisTabelle border="0" width="100%" >
+<td>    <th align="left"  width="200">Spieler1</th>   </td>
+<td>	<h3> 5:4 </h3>      </td>
+<td>    <th align="right"  width="200">Spieler2</th>  </td>
+  <tr>
+
+<table id="Runde1Tabelle" border="0" width="100%" >
+  <tr>
+    <tr>
+    <td rowspan="2"><div id="Quadrat1" class="Quadrat redBackground"></div></td>
+    <td rowspan="2"><div id="Quadrat2" class="Quadrat redBackground"></div></td>
+    <td rowspan="2"><div id="Quadrat3" class="Quadrat redBackground"></div></td>
+    <td class="SchriftgroesseKlein" >Runde 1</td>
+    <td rowspan="2"><div id="Quadrat4" class="Quadrat redBackground"></div></td>
+    <td rowspan="2"><div id="Quadrat5" class="Quadrat redBackground"></div></td>
+    <td rowspan="2"><div id="Quadrat6" class="Quadrat redBackground"></div></td>
+  </tr>
+  <tr>
+    <td><font size="2">Kategorie</font><br></td>
+  </tr>
+</tr>
+ 
+ <table id="Runde2Tabelle" border="0" width="100%" >
+  <tr>
+    <tr>
+    <td rowspan="2"><div id="Quadrat7" class="Quadrat redBackground"></div></td>
+    <td rowspan="2"><div id="Quadrat8" class="Quadrat redBackground"></div></td>
+    <td rowspan="2"><div id="Quadrat9" class="Quadrat redBackground"></div></td>
+    <td class="SchriftgroesseKlein">Runde 2 </td>
+    <td rowspan="2"><div id="Quadrat10" class="Quadrat redBackground"></div></td>
+    <td rowspan="2"><div id="Quadrat11" class="Quadrat redBackground"></div></td>
+    <td rowspan="2"><div id="Quadrat12" class="Quadrat greenBackground"></div></td>
+  </tr>
+  <tr>
+    <td class="SchriftgroesseKlein">Kategorie</td>
+  </tr>
+</tr>
+
+<table id="Runde3Tabelle" border="0" width="100%" >
+  <tr>
+    <tr>
+    <td rowspan="2"><div id="Quadrat13" class="Quadrat redBackground"></div></td>
+    <td rowspan="2"><div id="Quadrat14" class="Quadrat redBackground"></div></td>
+    <td rowspan="2"><div id="Quadrat15" class="Quadrat redBackground"></div></td>
+    <td class="SchriftgroesseKlein">Runde 3</td>
+    <td rowspan="2"><div id="Quadrat16" class="Quadrat greenBackground"></div></td>
+    <td rowspan="2"><div id="Quadrat17" class="Quadrat greenBackground"></div></td>
+    <td rowspan="2"><div id="Quadrat18" class="Quadrat greenBackground"></div></td>
+  </tr>
+  <tr>
+    <td class="SchriftgroesseKlein">Kategorie</td>
+  </tr>
+</tr>
+
+<table id="Runde4Tabelle" border="0" width="100%" >
+  <tr>
+    <tr>
+    <td rowspan="2"><div id="Quadrat19" class="Quadrat redBackground"></div></td>
+    <td rowspan="2"><div id="Quadrat20" class="Quadrat greenBackground"></div></td>
+    <td rowspan="2"><div id="Quadrat21" class="Quadrat redBackground"></div></td>
+    <td class="SchriftgroesseKlein">Runde 4</td>
+    <td rowspan="2"><div id="Quadrat22" class="Quadrat redBackground"></div></td>
+    <td rowspan="2"><div id="Quadrat23" class="Quadrat greenBackground"></div></td>
+    <td rowspan="2"><div id="Quadrat24" class="Quadrat redBackground"></div></td>
+  </tr>
+  <tr>
+    <td class="SchriftgroesseKlein">Kategorie</td>
+  </tr>
+</tr>
+
+<table id="Runde5Tabelle" border="0" width="100%" >
+  <tr>
+    <tr>
+    <td rowspan="2"><div id="Quadrat25" class="Quadrat redBackground"></div></td>
+    <td rowspan="2"><div id="Quadrat26" class="Quadrat redBackground"></div></td>
+    <td rowspan="2"><div id="Quadrat27" class="Quadrat redBackground"></div></td>
+    <td class="SchriftgroesseKlein">Runde 5</td>
+    <td rowspan="2"><div id="Quadrat28" class="Quadrat redBackground"></div></td>
+    <td rowspan="2"><div id="Quadrat29" class="Quadrat redBackground"></div></td>
+    <td rowspan="2"><div id="Quadrat30" class="Quadrat redBackground"></div></td>
+  </tr>
+  <tr>
+    <td class="SchriftgroesseKlein">Kategorie</td>
+  </tr>
+</tr>
+
+<table id="Runde6Tabelle" border="0" width="100%" >
+  <tr>
+    <tr>
+    <td rowspan="2" align="center">Du bist dran</td>
+    <td class="SchriftgroesseKlein">Runde 6</td>
+    <td rowspan="2">verdeckt</td>
+  </tr>
+  <tr>
+    <td class="SchriftgroesseKlein">Kategorie</td>
+  </tr>
+</tr>
+
+
+   <table id="SpielenButtonTabelle" border="0" width="50%">
+     <tr>
+  <div class="content-padded">
+	<a class="topcoat-button--large--cta center full" ontouchend ="openFrage();">Spielen</a>
+  </div>
+    </tr>
+</body>
+</html>
