@@ -46,6 +46,14 @@
 	font-size: 11px;
 }
 
+.Rand1{
+border: 1px solid black;
+margin: -8px;
+}
+
+.Rand2{
+margin: -8px;
+}
 
 .pictureleft {
 text-align: left;
