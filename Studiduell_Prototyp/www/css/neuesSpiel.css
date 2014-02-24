@@ -13,11 +13,15 @@ body {
 .custom_icon_button {
 	margin-bottom: 1em;
 	width: 100%; 
-}
-
-#spielerSuchenButton {
-	background-image: url("../images/magnifier.ico");
 	background-repeat: no-repeat;
 	background-position: right;
 	background-size: 3em;
+}
+
+#spielerSuchenButton {
+	background-image: url("../images/lupe.png");
+}
+
+#BeliebigerSpielerButton {
+	background-image: url("../images/lupe.png");
 }
