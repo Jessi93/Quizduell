@@ -34,14 +34,25 @@
 				
 
 		<div class="content-padded">
-		<button id="NeuesSpielStartenButton" class="topcoat-button--large--cta center full custom_icon_button" ontouchend="openNeuesSpielScreen()">Neues Spiel starten</button>
+		<button id="NeuesSpielStartenButton" class="topcoat-button--large--cta center full custom_icon_button_right" ontouchend="openNeuesSpielScreen()">Neues Spiel starten</button>
 		</div> 
 		
-
-	
+	<div class="content-padded">
+		<a button id= "YourTurnButton" class="topcoat-button--large center full custom_icon_button_left textklein" ontouchend ="openRundenuebersicht()" >Du bist an der Reihe gegen <b>Spieler 1</b> </a>
+		</div>
+		<div class="content-padded">
+		<a button id= "YourTurnButton" class="topcoat-button--large center full custom_icon_button_left textklein" ontouchend ="openRundenuebersicht()" >Du bist an der Reihe gegen <b>Spieler 2</b> </a>
+		</div>
+		
 		<div class="content-padded">
 		<a class="topcoat-button--large--cta center full" ontouchend ="openRundenuebersicht()" >Rundenübersicht</a>
 		</div>
+	
+	<h2>Warten auf:</h2>
+	
+	<div id="WartenAuf1" class="RechteckWartenAuf textmid">Spieler 1</div>
+	<div id="WartenAuf2" class="RechteckWartenAuf textmid ">Spieler 2</div>
+	<div id="WartenAuf3" class="RechteckWartenAuf textmid">Spieler 3</div>
 	
 </body>
 </html>
