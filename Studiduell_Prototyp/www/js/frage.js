@@ -57,7 +57,7 @@ switch (antwort) {
 	return true;
     break;
 }
-
+}
 //Antworten werden auf Richtigkeit ueberprueft und die Buttons werden dem entsprechend markiert
 function vergleicheAntworten(button) {
 var btn = $(button);
