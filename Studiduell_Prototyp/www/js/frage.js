@@ -67,13 +67,37 @@ btn.addClass("buttonRichtig");
 else if (btn.hasClass("buttonAusgewaehlt") &&  !getWahrheitsgehalt(btn)) {
 btn.addClass("buttonFalsch");
 }
-else{
-}
+//TODO Logik: hat gegner bereits geantwortet?
 btn.addClass("antwortGegner");
 }
 
 var buttonWeiterZaehler = 1;
+
 var fragenZaehler = 1;
+alert(buttonWeiterZaehler);
+  
+//Weiterleitung
+function weiter() {
+if (buttonWeiterZaehler = 1){
+vergleicheAntworten(document.getElementById("antwort1"));
+vergleicheAntworten(document.getElementById("antwort2"));
+vergleicheAntworten(document.getElementById("antwort3"));
+vergleicheAntworten(document.getElementById("antwort4"));
+buttonWeiterZaehler = 2;
+}
+else if ((buttonWeiterZaehler = 2) && (fragenZaehler <= 3){
+var newView = new steroids.views.WebView("html/Frage.html");
+steroids.layers.push(newView);
+
+buttonWeiterZaehler = 1;
+fragenZaehler = fragenZaehler + 1;
+}
+else {
+var newView = new steroids.views.WebView("html/Rundenuebersicht.html");
+steroids.layers.push(newView);
+fragenZaehler = 1;
+}
+}
 
 /* function weiter() {
   switch (buttonWeiterZaehler) {
@@ -96,29 +120,5 @@ var fragenZaehler = 1;
     break;
 	}
   } */
-  
-//Weiterleitung
-function weiter() {
-if (buttonWeiterZaehler = 1){
-vergleicheAntworten(document.getElementById("antwort1"));
-vergleicheAntworten(document.getElementById("antwort2"));
-vergleicheAntworten(document.getElementById("antwort3"));
-vergleicheAntworten(document.getElementById("antwort4"));
-buttonWeiterZaehler = 2;
-}
-elseif ((buttonWeiterZaehler = 2) && (fragenZaehler <= 3){
-var newView = new steroids.views.WebView("html/Frage.html");
-steroids.layers.push(newView);
-
-buttonWeiterZaehler = 1;
-fragenZaehler = fragenZaehler + 1;
-}
-else {
-var newView = new steroids.views.WebView("html/Rundenuebersicht.html");
-steroids.layers.push(newView);
-fragenZaehler = 1;
-}
-}
-
 
 document.addEventListener("deviceready", init, false);
