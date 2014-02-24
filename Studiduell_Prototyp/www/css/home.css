@@ -1,0 +1,16 @@
+
+#NeuesSpielStartenButton {
+	background-image: url("../images/plus.png");
+}
+
+#RundenuebersichtButton {
+	background-image: url("../images/lupe.png");
+}
+
+.custom_icon_button {
+	margin-bottom: 1em;
+	width: 100%; 
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 3em;
+}
