@@ -9,6 +9,6 @@ function openNeuesSpielScreen() {
 }
 
 function openHomeScreen() {
-  var HomeScreen = new steroids.views.WebView("html/home.html");
-  steroids.layers.push(neuesSpielView);
+  var HomeScreenView = new steroids.views.WebView("html/home.html");
+  steroids.layers.push(HomeScreenView);
 }
