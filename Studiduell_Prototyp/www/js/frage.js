@@ -13,10 +13,10 @@ function setFrage() {
 }
 
 function setAntworten() {
-	$("#Antwort1").text("Frage via JS.");
-	$("#Antwort2").text("Frage via JS.");
-	$("#Antwort3").text("Frage via JS.");
-	$("#Antwort4").text("Frage via JS.");
+	$("#antwort1").text("Antwort via JS.");
+	$("#antwort2").text("Antwort via JS.");
+	$("#antwort3").text("Antwort via JS.");
+	$("#antwort4").text("Antwort via JS.");
 }
 
 function markiereAntwort(button) {
@@ -44,16 +44,16 @@ return false;
 */
 //test
 switch (antwort) {
-  case "Antwort1":
+  case "antwort1":
     return true;
     break;
-  case "Antwort2":
+  case "antwort2":
 	return true;
     break;
-  case "Antwort3":
+  case "antwort3":
 	return false;
     break;
-  case "Antwort4":
+  case "antwort4":
 	return true;
     break;
 }
@@ -100,10 +100,10 @@ var fragenZaehler = 1;
 //Weiterleitung
 function weiter() {
 if (buttonWeiterZaehler = 1){
-vergleicheAntworten(document.getElementById("Antwort1"));
-vergleicheAntworten(document.getElementById("Antwort2"));
-vergleicheAntworten(document.getElementById("Antwort3"));
-vergleicheAntworten(document.getElementById("Antwort4"));
+vergleicheAntworten(document.getElementById("antwort1"));
+vergleicheAntworten(document.getElementById("antwort2"));
+vergleicheAntworten(document.getElementById("antwort3"));
+vergleicheAntworten(document.getElementById("antwort4"));
 buttonWeiterZaehler = 2;
 }
 elseif ((buttonWeiterZaehler = 2) && (fragenZaehler <= 3){
