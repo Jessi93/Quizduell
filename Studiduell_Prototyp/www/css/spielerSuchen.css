@@ -29,8 +29,8 @@ body {
 #Suche_Button{
 background-image: url("../images/Lupe.png");
 width: 3.4em;
-height: 80%%;
-
+height: 95%;
+margin-top: 0.4em;
 }
 
 #SuchTabelle_div {
