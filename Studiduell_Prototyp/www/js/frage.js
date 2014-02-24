@@ -1,7 +1,8 @@
 function init() {
-	/* setKategorie();
+	setKategorie();
 	setFrage();
-	setAntworten(); */
+	setAntworten(); 
+	alert("Init wurde aufgerufen!);
 }
 
 function setKategorie() {
