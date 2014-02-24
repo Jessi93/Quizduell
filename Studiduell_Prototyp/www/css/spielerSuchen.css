@@ -28,8 +28,8 @@ body {
 }
 #Suche_Button{
 background-image: url("../images/Lupe.png");
-width: 2em;
-height: 50%;
+width: 100%;
+height: 100%;
 }
 
 #SuchTabelle_div {
