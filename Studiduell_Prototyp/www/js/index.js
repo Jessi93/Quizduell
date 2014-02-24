@@ -7,3 +7,8 @@ function openNeuesSpielScreen() {
   var neuesSpielView = new steroids.views.WebView("html/neuesSpiel.html");
   steroids.layers.push(neuesSpielView);
 }
+
+function openHomeScreen() {
+  var HomeScreen = new steroids.views.WebView("html/home.html");
+  steroids.layers.push(neuesSpielView);
+}
