@@ -14,7 +14,7 @@ function setSpieler2(){}
 
 //Logik zum setzen/ einblenden der Quadrate
 
-//Logik zum einblenden Verdeckt /Du bist dran 
+//Logik zum einblenden Verdeckt /Du bist dran  /Spielt
 
 
 
