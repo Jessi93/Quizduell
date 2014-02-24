@@ -21,3 +21,26 @@ body {
 #Ergebnisliste_div {
 	visibility: hidden;
 }
+
+#search_username_input{
+ background-image: url("../images/Lupe.png");
+ 
+}
+#Suche_Button{
+background-image: url("../images/Lupe.png");
+width: 2em;
+height: 50%;
+}
+
+#SuchTabelle_div {
+	display: table;
+	width: 100%;
+}
+
+.row {
+	display: table-row;
+}
+
+.row>div {
+	display: table-cell;
+}

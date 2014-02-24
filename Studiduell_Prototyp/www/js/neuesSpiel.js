@@ -13,7 +13,7 @@ steroids.view.navigationBar.show("Titel geändert!");
 }
 
 function SpielerSuchenSeite() {
-var SpielerSuchenView = new steroids.views.WebView("html/SpielerSuchen.html");
+var SpielerSuchenView = new steroids.views.WebView("html/spielerSuchen.html");
   steroids.layers.push(SpielerSuchenView);
 }
 
@@ -25,7 +25,7 @@ function StarteSpielBeliebigerGegner() {
 Wenn kein passendes Spiel vorhanden ist, starte ein neues Spiel gegen "Unbekannt"
 --> beim laden des homescreens wird das Spiel angezeigt!*/
 
-var HomeScreenView = new steroids.views.WebView("html/Home.html");
+var HomeScreenView = new steroids.views.WebView("html/home.html");
   steroids.layers.push(HomeScreenView);
 }
 

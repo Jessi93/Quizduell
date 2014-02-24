@@ -15,13 +15,26 @@
 		<!-- cordova.js is served from localhost to ensure the correct version -->
 		<script src="http://localhost/cordova.js"></script>
 		<script src="../components/steroids-js/steroids.js"></script>
+		<script src="../js/jquery-1.11.0.min.js"></script>
 		<script src="../js/application.js"></script>
 		<script src="../js/spielerSuchen.js"></script>
 	</head>
 	<body>
 		<div class="content-padded">
 			<!-- Spieler suchen -->
-			tbd button
+			<div id="SuchTabelle_div">
+				<div id= "Such_Tabellen_Zeile_div" class="row">
+					<div>
+					<input id="search_username_input" type="search" value="" placeholder="Username" class="topcoat-search-input">
+					</div>
+					<div>
+					<button id="Suche_Button" class="topcoat-icon-button" ontouchend="SpielerSuchen()"></button>
+					</div>
+				</div>
+			
+			</div>
+			
+
 				<!-- Ergebnisliste -->
 			<div id="Ergebnisliste_div" class="topcoat-list">
 				<h3 id="Ergebnisliste_header_h3" class="topcoat-list__header">Suchergebnis</h3>
