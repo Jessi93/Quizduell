@@ -44,32 +44,32 @@ return false;
 }
 */
 //test
-switch (antwort) {
-  case "antwort1":
-    return true;
-    break;
-  case "antwort2":
-	return true;
-    break;
-  case "antwort3":
-	return false;
-    break;
-  case "antwort4":
-	return true;
-    break;
-}
+	switch (antwort) {
+	  case "antwort1":
+		return true;
+		break;
+	  case "antwort2":
+		return true;
+		break;
+	  case "antwort3":
+		return false;
+		break;
+	  case "antwort4":
+		return true;
+		break;
+	}
 }
 //Antworten werden auf Richtigkeit ueberprueft und die Buttons werden dem entsprechend markiert
 function vergleicheAntworten(button) {
-var btn = $(button);
-if (getWahrheitsgehalt(btn)){
-btn.addClass("buttonRichtig");
-}
-else if (btn.hasClass("buttonAusgewaehlt") &&  !getWahrheitsgehalt(btn)) {
-btn.addClass("buttonFalsch");
-}
-//TODO Logik: hat gegner bereits geantwortet?
-btn.addClass("antwortGegner");
+	var btn = $(button);
+	if (getWahrheitsgehalt(btn)){
+	btn.addClass("buttonRichtig");
+	}
+	else if (btn.hasClass("buttonAusgewaehlt") &&  !getWahrheitsgehalt(btn)) {
+	btn.addClass("buttonFalsch");
+	}
+	//TODO Logik: hat gegner bereits geantwortet?
+	btn.addClass("antwortGegner");
 }
 
 var buttonWeiterZaehler = 1;
@@ -79,25 +79,25 @@ alert(buttonWeiterZaehler);
   
 //Weiterleitung
 function weiter() {
-if (buttonWeiterZaehler = 1){
-vergleicheAntworten(document.getElementById("antwort1"));
-vergleicheAntworten(document.getElementById("antwort2"));
-vergleicheAntworten(document.getElementById("antwort3"));
-vergleicheAntworten(document.getElementById("antwort4"));
-buttonWeiterZaehler = 2;
-}
-else if ((buttonWeiterZaehler = 2) && (fragenZaehler <= 3){
-var newView = new steroids.views.WebView("html/Frage.html");
-steroids.layers.push(newView);
+	if (buttonWeiterZaehler = 1){
+	vergleicheAntworten(document.getElementById("antwort1"));
+	vergleicheAntworten(document.getElementById("antwort2"));
+	vergleicheAntworten(document.getElementById("antwort3"));
+	vergleicheAntworten(document.getElementById("antwort4"));
+	buttonWeiterZaehler = 2;
+	}
+	else if ((buttonWeiterZaehler = 2) && (fragenZaehler <= 3){
+	var newView = new steroids.views.WebView("html/Frage.html");
+	steroids.layers.push(newView);
 
-buttonWeiterZaehler = 1;
-fragenZaehler = fragenZaehler + 1;
-}
-else {
-var newView = new steroids.views.WebView("html/Rundenuebersicht.html");
-steroids.layers.push(newView);
-fragenZaehler = 1;
-}
+	buttonWeiterZaehler = 1;
+	fragenZaehler = fragenZaehler + 1;
+	}
+	else {
+	var newView = new steroids.views.WebView("html/Rundenuebersicht.html");
+	steroids.layers.push(newView);
+	fragenZaehler = 1;
+	}
 }
 
 /* function weiter() {

@@ -1,13 +1,13 @@
 
-#NeuesSpielStartenButton {
+#neuesSpielStartenButton {
 	background-image: url("../images/plus.png");
 }
 
-#RundenuebersichtButton {
+#rundenuebersichtButton {
 	background-image: url("../images/lupe.png");
 }
 
-#YourTurnButton {
+.yourTurnButton {
 	background-image: url("../images/profilbild.png");
 	
 }

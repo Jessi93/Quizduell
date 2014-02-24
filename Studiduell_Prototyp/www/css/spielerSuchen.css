@@ -18,7 +18,7 @@ body {
 	background-size: 3em;
 }
 
-#Ergebnisliste_div {
+#ergebnislisteDiv {
 	visibility: hidden;
 }
 
@@ -26,7 +26,7 @@ body {
  background-image: url("../images/Lupe.png");
  
 }
-#Suche_Button{
+#sucheButton{
 background-image: url("../images/Lupe.png");
 width: 3.4em;
 height: 95%;

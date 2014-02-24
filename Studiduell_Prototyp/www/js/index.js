@@ -1,5 +1,5 @@
 function openHomeScreen() {
-  var HomeScreenView = new steroids.views.WebView("html/home.html");
-  steroids.layers.push(HomeScreenView);
-  steroids.layers.pop();
-  }
+	var homeScreenView = new steroids.views.WebView("html/home.html");
+	steroids.layers.push(homeScreenView);
+	//steroids.layers.pop(); //nicht verwenden, da nicht zuverlässig
+}

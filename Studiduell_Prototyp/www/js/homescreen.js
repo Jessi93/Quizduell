@@ -6,11 +6,11 @@ Screenspezifische Funktionen werden in den jeweiligen 'screenname.js' files besc
 /*Anzeige Titel*/
 
 function openRundenuebersicht() {
-  var rundenuebersichtView = new steroids.views.WebView("html/rundenuebersicht.html");
-  steroids.layers.push(rundenuebersichtView);
+	var rundenuebersichtView = new steroids.views.WebView("html/rundenuebersicht.html");
+	steroids.layers.push(rundenuebersichtView);
 }
 
 function openNeuesSpielScreen() {
-  var neuesSpielView = new steroids.views.WebView("html/neuesSpiel.html");
-  steroids.layers.push(neuesSpielView);
+	var neuesSpielView = new steroids.views.WebView("html/neuesSpiel.html");
+	steroids.layers.push(neuesSpielView);
 }
