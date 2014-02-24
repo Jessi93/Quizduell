@@ -1,7 +1,7 @@
 function init() {
-	setKategorie();
+	/* setKategorie();
 	setFrage();
-	setAntworten();
+	setAntworten(); */
 }
 
 function setKategorie() {
