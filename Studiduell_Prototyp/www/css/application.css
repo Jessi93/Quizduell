@@ -11,8 +11,6 @@ input, textarea, [contenteditable] * {
   padding: 10px;
 }
 
-#myImage {
-    width: 300px;
-    margin: auto;
-    display: block;
-  }
+.mid {
+ text-align: center 
+}

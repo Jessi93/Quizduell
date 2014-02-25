@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset="utf8">
+	  <meta name="viewport" content="width=device-width">
+	  <title>Studiduell</title>
+	  
+	  <link rel="stylesheet" href="../vendor/topcoat/css/topcoat-mobile-light.css" />
+	  <link rel="stylesheet" href="../css/kategorieAuswaehlen.css" />
+	  
+	  <script src="../js/jquery-1.11.0.min.js"></script>
+	  <!-- cordova.js is served from localhost to ensure the correct version -->
+	  <script src="http://localhost/cordova.js"></script>
+	  <script src="../components/steroids-js/steroids.js"></script>
+	  
+	  <script src="../js/kategorieAuswaehlen.js"></script>
+	      <script src="../js/application.js"></script>
+	</head>
+	<body>
+		<div id="kategorieText">Wähle eine Kategorie aus:</div>
+		
+		<div id="kategorienauswahl" class="center">
+		<div id="kategorie1">
+			<button class="topcoat-button--large button" ontouchend="kategorieauswaehlen(this);">Logik und Algebra</button>
+		</div>
+		<div id="kategorie2">
+			<button class="topcoat-button--large button" ontouchend="kategorieauswaehlen(this);">Systemanalyse</button>
+		</div>
+		<div id="kategorie3">
+			<button class="topcoat-button--large button" ontouchend="kategorieauswaehlen(this);">Operation Research</button>
+		</div>
+		</div>
+	</body>
+	
+</html>
