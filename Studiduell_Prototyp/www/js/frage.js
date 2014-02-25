@@ -60,8 +60,7 @@ return false;
 	}
 }
 //Antworten werden auf Richtigkeit ueberprueft und die Buttons werden dem entsprechend markiert
-function vergleicheAntworten(button) {
-	var btn = $(button);
+function vergleicheAntworten(btn) {
 	if (getWahrheitsgehalt(btn)){
 	btn.addClass("buttonRichtig");
 	}
@@ -72,18 +71,18 @@ function vergleicheAntworten(button) {
 	btn.addClass("antwortGegner");
 }
 
-var buttonWeiterZaehler = 1;
+var buttonWeiterZaehler;
 
-var fragenZaehler = 1;
+var fragenZaehler;
 alert(buttonWeiterZaehler);
   
 //Weiterleitung
 function weiter() {
 	if (buttonWeiterZaehler = 1){
-	vergleicheAntworten(document.getElementById("antwort1"));
-	vergleicheAntworten(document.getElementById("antwort2"));
-	vergleicheAntworten(document.getElementById("antwort3"));
-	vergleicheAntworten(document.getElementById("antwort4"));
+	vergleicheAntworten($("#antwort1"));
+	vergleicheAntworten($("#antwort2"));
+	vergleicheAntworten($("#antwort3"));
+	vergleicheAntworten($("#antwort4"));
 	buttonWeiterZaehler = 2;
 	}
 	else if ((buttonWeiterZaehler = 2) && (fragenZaehler <= 3){
