@@ -1,22 +1,21 @@
-init();
-
 function init() {
 	var questions = JSON.parse(localStorage.getItem("questions"));
 	var questionCounter = localStorage.getItem("questionCounter");
 	
 	setKategorie(questions[questionCounter]);
-/* 	setFrage(questions[questionCounter]);
-	setAntworten(questions[questionCounter]); */
+ 	setFrage(questions[questionCounter]);
+	setAntworten(questions[questionCounter]);
 	alert(JSON.stringify(questions[questionCounter]));
+	
 }
 
 
 function setKategorie(question) {
-	$("#kategorieDiv").text(question["kategorie_name"]);
+	$("#kategorieDiv").text(question.kategorie_name);
 
 }
 
-/* function setFrage(question) {
+function setFrage(question) {
 	$("#frageDiv").text(question.frage);
 }
 
@@ -25,7 +24,7 @@ function setAntworten(question) {
 	$("#antwort2").text(question.antwortmoeglichkeit2);
 	$("#antwort3").text(question.antwortmoeglichkeit3);
 	$("#antwort4").text(question.antwortmoeglichkeit4);
-} */
+}
 
 function markiereAntwort(button) {
 	var btn = $(button);
@@ -123,3 +122,5 @@ function weiter() {
     break;
 	}
   } */
+  
+  document.addEventListener("deviceready", init, false);
