@@ -1,23 +1,29 @@
 function init() {
-	setKategorie();
-	setFrage();
-	setAntworten(); 
-	alert("Init wurde aufgerufen!);
+	var questions = JSON.parse(localStorage.getItem("questions"));
+	var questionCounter = localStorage.getItem("questionCounter");
+	
+	setKategorie(questions[questionCounter]);
+ 	setFrage(questions[questionCounter]);
+	setAntworten(questions[questionCounter]);
+	alert(JSON.stringify(questions[questionCounter]));
+	
 }
 
-function setKategorie() {
-	$("#kategorieDiv").text("Kategorie via JS.");
+
+function setKategorie(question) {
+	$("#kategorieDiv").text(question.kategorie_name);
+
 }
 
-function setFrage() {
-	$("#frageDiv").text("Frage via JS.");
+function setFrage(question) {
+	$("#frageDiv").text(question.frage);
 }
 
-function setAntworten() {
-	$("#antwort1").text("Antwort via JS.");
-	$("#antwort2").text("Antwort via JS.");
-	$("#antwort3").text("Antwort via JS.");
-	$("#antwort4").text("Antwort via JS.");
+function setAntworten(question) {
+	$("#antwort1").text(question.antwortmoeglichkeit1);
+	$("#antwort2").text(question.antwortmoeglichkeit2);
+	$("#antwort3").text(question.antwortmoeglichkeit3);
+	$("#antwort4").text(question.antwortmoeglichkeit4);
 }
 
 function markiereAntwort(button) {
@@ -34,7 +40,7 @@ function markiereAntwort(button) {
 }
 
 //Ermittelt den Wahrheitsgehalt einer Antwort 
-function getWahrheitsgehalt(antwort) {
+/* /* function getWahrheitsgehalt(antwort) {
 //TODO 
 /*if (antwort.getWahrheit){
 return true;
@@ -44,23 +50,19 @@ return false;
 }
 */
 //test
-	switch (antwort) {
+	/* switch (antwort) {
 	  case "antwort1":
 		return true;
-		break;
 	  case "antwort2":
 		return true;
-		break;
 	  case "antwort3":
 		return false;
-		break;
 	  case "antwort4":
 		return true;
-		break;
 	}
-}
+} */
 //Antworten werden auf Richtigkeit ueberprueft und die Buttons werden dem entsprechend markiert
-function vergleicheAntworten(btn) {
+/* function vergleicheAntworten(btn) {
 	if (getWahrheitsgehalt(btn)){
 	btn.addClass("buttonRichtig");
 	}
@@ -70,13 +72,13 @@ function vergleicheAntworten(btn) {
 	//TODO Logik: hat gegner bereits geantwortet?
 	btn.addClass("antwortGegner");
 }
+ */
+//var buttonWeiterZaehler;
 
-var buttonWeiterZaehler;
-
-var fragenZaehler;
-alert(buttonWeiterZaehler);
+//var fragenZaehler;
   
 //Weiterleitung
+/*
 function weiter() {
 	if (buttonWeiterZaehler = 1){
 	vergleicheAntworten($("#antwort1"));
@@ -97,7 +99,7 @@ function weiter() {
 	steroids.layers.push(newView);
 	fragenZaehler = 1;
 	}
-}
+}*/
 
 /* function weiter() {
   switch (buttonWeiterZaehler) {
@@ -120,5 +122,5 @@ function weiter() {
     break;
 	}
   } */
-
-document.addEventListener("deviceready", init, false);
+  
+  document.addEventListener("deviceready", init, false);
