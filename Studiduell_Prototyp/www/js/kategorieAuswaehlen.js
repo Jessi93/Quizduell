@@ -21,7 +21,6 @@ function loadCategoriesFromServer() {
 		success:function(obj){setKategorien(obj);},
 		error:function(obj){alert(JSON.stringify(obj));}
 	});
-	setKategorien();
 }
 
 
