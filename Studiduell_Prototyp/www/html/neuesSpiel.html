@@ -23,14 +23,14 @@
 		<div class="content-padded">
 			<!-- Spieler suchen -->
 			<button id="spielerSuchenButton" class="topcoat-icon-button custom_icon_button" ontouchend="spielerSuchenSeite()">Spieler suchen</button>
-			<button id="beliebigerSpielerButton" class="topcoat-icon-button custom_icon_button" ontouchend="starteSpielBeliebigerGegner()">Beliebiger Spieler</button>
+			<button id="beliebigerSpielerButton" class="topcoat-icon-button custom_icon_button" ontouchend="createNewGameRandom()">Beliebiger Spieler</button>
 			
 				<!-- Freundesliste -->
 			<div id="freundeslisteDiv" class="topcoat-list">
 				<h3 class="topcoat-list__header">Freundesliste</h3>
-				<ul class="topcoat-list__container ">
+				<ul class="topcoat-list__container" id="freundeslistErweitern">
 					<!--tbd: Freund entfernen Button & Profilbild! -->
-				<li class="topcoat-list__item ">
+				<!--obsolet<li class="topcoat-list__item ">
 					PeterMayer
 				</li>
 				<li class="topcoat-list__item custom_List_item">
@@ -42,7 +42,7 @@
 				<li class="topcoat-list__item custom_List_item" ontouchend ="test()">
 					Phil123
 				</li>
-				
+				-->
 			  </ul>
 			</div>
 		</div>
