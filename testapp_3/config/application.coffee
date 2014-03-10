@@ -1,12 +1,10 @@
 # For an explanation of the steroids.config properties, see the guide at
 # http://guides.appgyver.com/steroids/guides/project_configuration/config-application-coffee/
 
-steroids.config.name = "Testapp_1"
+steroids.config.name = "testapp_3"
 
 # -- Initial Location --
 steroids.config.location = "http://localhost/index.html"
-# -- "http://localhost/tutorial.html"
-# -- "cameraExample.html"
 
 # -- Tab Bar --
 # steroids.config.tabBar.enabled = true
